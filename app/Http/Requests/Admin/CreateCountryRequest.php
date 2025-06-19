@@ -3,7 +3,6 @@
 namespace App\Http\Requests\Admin;
 
 use App\Http\Requests\BaseFormRequest;
-use Illuminate\Validation\Rule;
 
 class CreateCountryRequest extends BaseFormRequest
 {

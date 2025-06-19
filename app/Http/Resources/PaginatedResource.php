@@ -2,8 +2,8 @@
 
 namespace App\Http\Resources;
 
-use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Contracts\Pagination\Paginator;
+use Illuminate\Http\Resources\Json\JsonResource;
 
 class PaginatedResource extends JsonResource
 {

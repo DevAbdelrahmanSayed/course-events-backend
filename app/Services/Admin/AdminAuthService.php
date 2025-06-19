@@ -1,13 +1,13 @@
 <?php
 
- namespace App\Services\Admin;
+namespace App\Services\Admin;
+
 use App\Models\Admin;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\Facades\Auth;
 
 class AdminAuthService
 {
-
     public function login(array $credentials): array
     {
         if (! $token = Auth::guard('admin')->attempt($credentials)) {

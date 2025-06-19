@@ -13,7 +13,7 @@ return [
      * Optionally, you can specify group configuration by using key/values
      */
     'directories' => [
-      app_path('Http/Controllers/Api/Admin/V1') => [
+        app_path('Http/Controllers/Api/Admin/V1') => [
             'prefix' => 'api/v1/admin/',
             'middleware' => ['api', 'auth:admin'],
             'patterns' => ['*Controller.php'],
@@ -25,7 +25,7 @@ return [
      * This middleware will be applied to all routes.
      */
     'middleware' => [
-        \Illuminate\Routing\Middleware\SubstituteBindings::class
+        \Illuminate\Routing\Middleware\SubstituteBindings::class,
     ],
 
     /*

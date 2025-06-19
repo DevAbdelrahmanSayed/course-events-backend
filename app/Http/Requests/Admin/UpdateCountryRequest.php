@@ -22,7 +22,7 @@ class UpdateCountryRequest extends BaseFormRequest
                 'string',
                 'max:255',
                 'unique:countries,name',
-                Rule::unique('countries', 'name')->ignore($countrySlug, 'slug')
+                Rule::unique('countries', 'name')->ignore($countrySlug, 'slug'),
             ],
             'name_ar' => ['nullable', 'string', 'max:255'],
             'content' => ['nullable', 'string', 'max:255'],

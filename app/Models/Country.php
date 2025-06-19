@@ -9,15 +9,15 @@ use Spatie\DeletedModels\Models\Concerns\KeepsDeletedModels;
 
 class Country extends Model
 {
-    use HasFactory ,HasCustomSlug ,KeepsDeletedModels;
+    use HasCustomSlug ,HasFactory ,KeepsDeletedModels;
 
     protected $fillable = [
         'name',
-        'name_ar', 
+        'name_ar',
         'slug',
         'content',
         'currency',
-        'admin_id'
+        'admin_id',
     ];
 
     public function admin()

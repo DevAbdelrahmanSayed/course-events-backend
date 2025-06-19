@@ -26,6 +26,7 @@ class CountryService
     public function create(array $data): Country
     {
         $data['admin_id'] = auth('admin')->id();
+
         return Country::create($data);
     }
 
@@ -33,6 +34,7 @@ class CountryService
     {
         $data['admin_id'] = auth('admin')->id();
         $country->update($data);
+
         return $country->fresh();
     }
 

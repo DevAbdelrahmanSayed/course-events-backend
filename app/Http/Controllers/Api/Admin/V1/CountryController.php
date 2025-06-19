@@ -28,8 +28,7 @@ class CountryController extends Controller
 {
     public function __construct(
         private readonly CountryService $countryService
-    ) {
-    }
+    ) {}
 
     public function index(Request $request): JsonResponse
     {
@@ -47,7 +46,6 @@ class CountryController extends Controller
         );
 
     }
-
 
     public function store(CreateCountryRequest $request): JsonResponse
     {
@@ -100,5 +98,3 @@ class CountryController extends Controller
 
     }
 }
-
-
